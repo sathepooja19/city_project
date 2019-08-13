@@ -1,0 +1,52 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="shital.css">
+	<script>
+		function myfun(val) {
+			alert(val);
+			if(val=="banglore"){
+				document.getElementById("photo").innerHTML="<img src='./cubbon_park2.jpg'>";
+				document.getElementById('demo').innerHTML="CUBBON PARK Cubbon Park was originally created by Major General Richard Sankey, in 1870,     during his time as the Chief engineer of the Mysore State. ... The park was firstly named as Meade's Park in 1870. Later it was renamed as Cubbon Park following the name of Sir Mark Cubbon, who served for the longest period as the commissioner.";
+
+			}
+			else if(val=="kerala"){
+				document.getElementById("photo").innerHTML="<img src='Kerala.jpg'>";
+				document.getElementById("demo").innerHTML="Kovalam beach, one of best beaches in Kerala, is famous for its New Year celebrations, deep strong massages, Ayurvedic treatments, sunbathing fests, and water sports like parasailing. It has a crescent-shaped coastline which is always buzzing with activities. People from different countries, cultures, and states come together and add to the beauty of the place.";
+
+			}
+
+		
+		}
+	</script>
+</head>
+
+
+	<center><h1> <b>Popular Cities In India</b></h1></center>
+<body > 
+		<div class="head_sec">
+
+
+<form>
+	<center><select id="select" onchange="myfun(this.value);">
+		<option>select the city</option></center>
+		<option value="banglore">BANGLORE</option>
+		<option value="kerala">KERALA</option>
+		
+		
+	</select><br>
+	<br> 
+	<div class="btn">
+	<input type="submit" name="submit" >
+</form>
+
+	<center><h3>Your Selected City is....</h3></center>
+<div id="photo"></div>
+<h3 id="demo"></h3>
+<div id="video"></div>
+<div id="info"></div>
+
+</center></form>
+</div>
+
+</body>
+</html>
